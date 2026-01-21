@@ -29,9 +29,7 @@ h1 {
   position: relative;
   width: max-content;
   padding: 35px;
-  border: 1px solid #333;
   margin: 10px auto 0 auto;
-
   display: grid;
   grid-template-columns: repeat(3, 60px);
   grid-template-rows: repeat(3, 60px);
