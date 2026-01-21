@@ -16,18 +16,22 @@ body {
   background: white;
   padding: 20px;
   border: 1px solid #ccc;
+  width: 360px;
 }
 
 h1 {
   text-align: center;
-  margin-top: 0;
+  margin: 0 0 10px 0;
+  font-size: 18px;
 }
 
 .board {
   position: relative;
   width: max-content;
   padding: 35px;
-  margin-top: 20px;
+  border: 1px solid #333;
+  margin: 10px auto 0 auto;
+
   display: grid;
   grid-template-columns: repeat(3, 60px);
   grid-template-rows: repeat(3, 60px);
@@ -36,11 +40,11 @@ h1 {
 
 .cell {
   border: 1px solid #333;
+  background: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  background: #fafafa;
 }
 
 .corner {
@@ -66,4 +70,22 @@ h1 {
 .d {
   bottom: 5px;
   right: 5px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.controls button {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 12px;
+  font-family: monospace;
+  font-size: 13px;
 }
